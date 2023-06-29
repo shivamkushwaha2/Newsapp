@@ -66,7 +66,7 @@ class Entertainment : AppCompatActivity(), NewsItemclicked {
         }
     private fun fetchdata(page:Int) {
         isLoading = true
-        url ="https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=ef78e990b17546c98dec95130aa71ba4&page=$page"
+        url ="https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=&page=$page"
         val jsonObjectRequest = object: JsonObjectRequest(
             Method.GET, url,
             null,
